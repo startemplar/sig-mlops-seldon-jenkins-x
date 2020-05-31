@@ -7,8 +7,7 @@ make train_model: install_dev
 	(cd src && python train_model.py)
 
 make test:
-	(cd src && \
-		pytest -s --verbose -W ignore --log-level=INFO 2>&1)
+	(cd src &&  python3 /home/ubuntu/.local/lib/python3.6/site-packages/pytest/ -s --verbose -W ignore --log-level=INFO 2>&1)
 
 make install_dev:
 	pip install -r src/requirements.txt
