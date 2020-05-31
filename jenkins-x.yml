@@ -21,7 +21,6 @@ pipelineConfig:
           agent:
             #image: gcr.io/jenkinsxio/builder-go:2.0.916-264
             image: jenkinsxio/builder-go:covered-0.0.0-SNAPSHOT-PR-4759-10
-            name: next-version
           steps:
           - sh: "jx step tag --version $(cat VERSION)"
             name: tag-version
